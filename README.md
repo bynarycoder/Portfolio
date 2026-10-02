@@ -1,5 +1,8 @@
 # Portfolio website - Abdulwahab Abdulyekeen
 
+**Live:** https://bynarycoder.vercel.app (deployed by Vercel from this repo - pushing to `main` rebuilds it)
+Source of the page: `build_site.py` generates `index.html`; the screenshots live in `assets/`.
+
 
 Single page, 44 KB of HTML/CSS/JS in one file plus a 2.8 MB `assets/` folder of real screenshots.
 No frameworks, no external fonts, no analytics, no tracking. Works on GitHub Pages, Netlify, Vercel,

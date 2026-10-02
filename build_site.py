@@ -8,6 +8,8 @@ import os
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 
+SITE = 'https://bynarycoder.vercel.app'   # canonical URL, used for social link previews
+
 ME = dict(
     name='Abdulwahab Abdulyekeen',
     role='Software Developer & UI/UX Designer',
@@ -445,10 +447,21 @@ HTML = f'''<!doctype html>
 <meta name="description" content="{ME['name']} designs and builds web apps: UI/UX in Figma, front end in React and Next.js. Three live case studies: FuelFinder AI, Mammo Guard and JobLiberty AI.">
 <meta name="theme-color" content="#08161F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230E7C7B'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EAA%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="{SITE}/">
+<meta property="og:site_name" content="{ME['name']} - Portfolio">
 <meta property="og:title" content="{ME['name']} &mdash; Software Developer &amp; UI/UX Designer">
 <meta property="og:description" content="Design and code from the same person: three live products, from user flow to deployed app.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/f_light.jpg">
+<meta property="og:url" content="{SITE}/">
+<meta property="og:image" content="{SITE}/assets/f_light.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1000">
+<meta property="og:image:alt" content="FuelFinder AI, a map-first fuel price finder I designed and built">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{ME['name']} &mdash; Software Developer &amp; UI/UX Designer">
+<meta name="twitter:description" content="Three live products, from user flow to deployed app.">
+<meta name="twitter:image" content="{SITE}/assets/f_light.jpg">
+<meta name="author" content="{ME['name']}">
 <style>{CSS}</style>
 </head>
 <body>
