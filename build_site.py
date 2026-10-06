@@ -12,7 +12,7 @@ SITE = 'https://bynarycoder.vercel.app'   # canonical URL, used for social link 
 
 ME = dict(
     name='Abdulwahab Abdulyekeen',
-    role='Software Developer & UI/UX Designer',
+    role='Full-Stack Software Developer & UI/UX Designer',
     city='Kaduna, Nigeria',
     email='Abdulwahababdulyekeen1@gmail.com',
     phone='+234 704 518 7666',
@@ -22,8 +22,8 @@ ME = dict(
 
 SERVICES = [
     ('UI/UX Design', 'User flows, wireframes, high-fidelity screens, clickable prototypes and a small design system for web and mobile apps.'),
-    ('Front-End Development', 'Responsive React and Next.js interfaces with Tailwind CSS, built from the design and deployed live.'),
-    ('Full-Stack Web Apps', 'Python (FastAPI) back ends, REST APIs and AI features (Gemini, Groq, Scikit-learn) wired to a clean interface.'),
+    ('Full-Stack Web Development', 'React and Next.js front ends with Python (FastAPI) back ends and REST APIs, deployed live on Vercel and Render.'),
+    ('AI Features and Integrations', 'Gemini, Groq and Scikit-learn model work wired into real product flows: resume analysis, chat, batch predictions.'),
     ('Design to Code Handoff', 'Component-based layouts, spacing and colour tokens, documented so any developer can build without guessing.'),
 ]
 
@@ -34,7 +34,7 @@ PROJECTS = [
         url='https://fuel-station-finder-omega.vercel.app',
         repo='https://github.com/bynarycoder/Fuel-Station-Finder',
         year='2026', kind='3MTT capstone project',
-        role='UI/UX design and front-end development',
+        role='UI/UX design and development',
         stack=['Next.js', 'React', 'TypeScript', 'Leaflet + OpenStreetMap', 'REST API', 'AI assistant'],
         problem='Drivers waste time and fuel moving between stations without knowing which ones are open, what they charge, or how reliable that number is.',
         solution='A map-first app where a driver finds stations nearby, compares petrol, diesel, LPG and CNG prices, and asks an AI assistant for the cheapest option.',
@@ -58,7 +58,7 @@ PROJECTS = [
         color='#0EA5E9', accent_soft='rgba(14,165,233,.12)',
         url='https://mammo-guard.vercel.app', repo='',
         year='2026', kind='3MTT NextGen Knowledge Showcase',
-        role='UI/UX design and front-end development',
+        role='UI/UX design and development',
         stack=['React', 'Tailwind CSS', 'Recharts', 'Scikit-learn model', 'Wisconsin Diagnostic dataset'],
         problem='A prediction tool is only useful if a busy clinician can enter 30 measurements quickly and read the result without guessing what it means.',
         solution='A grouped clinical form, file upload for batch runs, a confidence-scored result with charts and a printable report, plus history and an awareness section.',
@@ -82,11 +82,11 @@ PROJECTS = [
         color='#4F46E5', accent_soft='rgba(79,70,229,.12)',
         url='https://jobliberty.vercel.app', repo='https://github.com/bynarycoder/JobLiberty-BE',
         year='2026', kind='3MTT NextGen Showcase 2026',
-        role='UI/UX design, front-end and back-end development',
+        role='UI/UX design and full-stack development',
         stack=['Next.js', 'React', 'Python / FastAPI', 'Gemini AI', 'Groq AI', 'Docker'],
         problem='Most CVs are filtered before a human reads them, and applicants never learn why, or which skills they are missing for the role they actually want.',
         solution='Upload a PDF CV and get one dashboard of AI analysis: ATS score, skill gaps, job matches, interview preparation and a career roadmap.',
-        intro='I designed the dashboard information architecture and built the front end against my own Python (FastAPI) back end, which calls Gemini for resume analysis.',
+        intro='I designed the dashboard information architecture, built the React front end and wrote the Python (FastAPI) back end that calls Gemini for resume analysis.',
         desktop='assets/job0_d.jpg', mobile='assets/j_m.jpg', mobile2='',
         decisions=[
             ('Explain the pipeline up front', 'The landing page frames the product as four steps, upload to offer, so users know what happens to their CV before they hand it over.'),
@@ -443,13 +443,13 @@ HTML = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{ME['name']} &mdash; Software Developer &amp; UI/UX Designer</title>
-<meta name="description" content="{ME['name']} designs and builds web apps: UI/UX in Figma, front end in React and Next.js. Three live case studies: FuelFinder AI, Mammo Guard and JobLiberty AI.">
+<title>{ME['name']} &mdash; Full-Stack Developer &amp; UI/UX Designer</title>
+<meta name="description" content="{ME['name']} is a full-stack developer and UI/UX designer: user flows and screens in Figma, React and Next.js front ends, Python/FastAPI back ends. Three live case studies: FuelFinder AI, Mammo Guard and JobLiberty AI.">
 <meta name="theme-color" content="#08161F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230E7C7B'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EAA%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="{SITE}/">
 <meta property="og:site_name" content="{ME['name']} - Portfolio">
-<meta property="og:title" content="{ME['name']} &mdash; Software Developer &amp; UI/UX Designer">
+<meta property="og:title" content="{ME['name']} &mdash; Full-Stack Software Developer &amp; UI/UX Designer">
 <meta property="og:description" content="Design and code from the same person: three live products, from user flow to deployed app.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE}/">
@@ -458,7 +458,7 @@ HTML = f'''<!doctype html>
 <meta property="og:image:height" content="1000">
 <meta property="og:image:alt" content="FuelFinder AI, a map-first fuel price finder I designed and built">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{ME['name']} &mdash; Software Developer &amp; UI/UX Designer">
+<meta name="twitter:title" content="{ME['name']} &mdash; Full-Stack Software Developer &amp; UI/UX Designer">
 <meta name="twitter:description" content="Three live products, from user flow to deployed app.">
 <meta name="twitter:image" content="{SITE}/assets/f_light.jpg">
 <meta name="author" content="{ME['name']}">
@@ -492,7 +492,7 @@ HTML = f'''<!doctype html>
     <div>
       <span class="pill-live"><i></i> 3 products live in your browser right now</span>
       <h1 style="margin-top:20px">I design the interface,<br>then <span>I build it.</span></h1>
-      <p class="lead">Software developer and UI/UX designer. Flow, wireframe, high-fidelity screens, then a
+      <p class="lead">Full-stack software developer and UI/UX designer. Flow, wireframe, high-fidelity screens, then a
       responsive React or Next.js build that is actually deployed &mdash; so the shipped product still looks like the design.</p>
       <div class="hero-cta">
         <a class="cta" href="#fuel">See the case studies</a>
@@ -580,7 +580,7 @@ HTML = f'''<!doctype html>
 
 <footer>
   <div class="wrap foot-row">
-    <span>&copy; <span data-year>2026</span> {ME['name']} &nbsp;|&nbsp; Software Developer and UI/UX Designer</span>
+    <span>&copy; <span data-year>2026</span> {ME['name']} &nbsp;|&nbsp; Full-Stack Software Developer and UI/UX Designer</span>
     <a href="#top" style="text-decoration:none;font-weight:600">Back to top &uarr;</a>
   </div>
 </footer>
